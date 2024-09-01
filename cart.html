@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact us</title>
+    <link rel="stylesheet" href="assete/css/all.css" />
+    <link rel="stylesheet" href="assete/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #page-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-image: url(assete/images/doubi.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80vh;
+      }
+      #page-header h2 {
+        color: #ffff;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #page-header p {
+        color: #ffff;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .heading {
+        width: 30%;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 1em 0;
+        /* height: 100vh; */
+      }
+
+      /* cart part is started here */
+      #cart {
+        overflow-x: auto;
+      }
+
+      #cart table {
+        width: 90%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        white-space: nowrap;
+        margin: 40px auto;
+      }
+      #cart table img {
+        width: 70%;
+      }
+      #cart table td:nth-child(1) {
+        width: 100px;
+        text-align: center;
+      }
+      #cart table td:nth-child(2) {
+        width: 150px;
+        text-align: center;
+      }
+      #cart table td:nth-child(3) {
+        width: 250px;
+        text-align: center;
+      }
+
+      #cart table td:nth-child(4),
+      #cart table td:nth-child(5),
+      #cart table td:nth-child(6) {
+        width: 150px;
+        text-align: center;
+      }
+      #cart table td:nth-child(5) input {
+        width: 70px;
+        padding: 10px 5px 10px 15px;
+      }
+      #cart table thead {
+        border: 1px solid #e2e9e1;
+        border-left: none;
+        border-right: none;
+      }
+      #cart table thead td {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 18px 0;
+      }
+      #cart table tbody tr td {
+        padding-top: 15px;
+      }
+      #cart table tbody td {
+        font-size: 13px;
+      }
+
+      #cart-add {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      #coupon {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+      #coupon h3,
+      #subtotal h3 {
+        padding-bottom: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #coupon input {
+        border: none;
+        background: none;
+        padding: 10px 20px;
+        outline: none;
+        width: 66%;
+        margin-right: 10px;
+        border: 1px solid #e2e9e1;
+      }
+      #coupon button,
+      #subtotal button {
+        border: none;
+        background: none;
+        outline: none;
+        background-color: #244444;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      #subtotal {
+        width: 50%;
+        margin-bottom: 30px;
+        border: 1px solid #e2e9e1;
+        padding: 30px;
+      }
+      #subtotal table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #subtotal table td {
+        width: 50%;
+        border: 1px solid #e2e9e1;
+        padding: 10px;
+        font-size: 13px;
+      }
+      @media (max-width: 477px) {
+        #cart-add {
+          flex-direction: column;
+        }
+        #coupon {
+          width: 100%;
+          margin: 5px;
+        }
+        #subtotal {
+          width: 100%;
+          padding: 30px;
+        }
+        .heading {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-section">
+      <div>
+        <button class="btn"><a href="loginPage.html">login</a></button>
+        <button class="btn"><a href="#">log out</a></button>
+      </div>
+      <div>
+        <button class="btn"><a href="#">Pshto</a></button>
+        <button class="btn"><a href="#">English</a></button>
+      </div>
+    </header>
+
+    <!-- navbar section is started here -->
+
+    <section id="header">
+      <div class="logo-class">
+        <a><h1>S.K.S</h1></a>
+        <h4><i class="fa-solid fa-cart-shopping log" id="cart"></i>Online</h4>
+        <h6>Store</h6>
+      </div>
+      <div>
+        <ul id="navbar">
+          <li><a href="../indext.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li id="lg-bag">
+            <a href="cart.html" class="active"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <a href="#"><i id="close" class="fa-solid fa-square-xmark"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-list"></i>
+      </div>
+    </section>
+
+    <!-- page header part is started here -->
+    <section id="page-header">
+      <div class="heading">
+        <h2>#Cart</h2>
+        <p>Add Your coupon Code & SAVE upto 70%!</p>
+      </div>
+    </section>
+
+    <!-- cart part is started here -->
+    <section id="cart">
+      <table with="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href=""><i class="fa-regular fa-circle-dot"></i></a>
+            </td>
+            <td><img src="assete/images/shirts/T-sh (2).webp" alt="" /></td>
+            <td>cartoon Astronaut T-Shirts</td>
+            <td>$120.12</td>
+            <td><input type="number" value="1" /></td>
+            <td>$120.12</td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href=""><i class="fa-regular fa-circle-dot"></i></a>
+            </td>
+            <td><img src="assete/images/shirts/T-sh (4).webp" alt="" /></td>
+            <td>cartoon Astronaut T-Shirts</td>
+            <td>$120.12</td>
+            <td><input type="number" value="1" /></td>
+            <td>$120.12</td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href=""><i class="fa-regular fa-circle-dot"></i></a>
+            </td>
+            <td><img src="assete/images/shirts/T-sh (3).webp" alt="" /></td>
+            <td>cartoon Astronaut T-Shirts</td>
+            <td>$120.12</td>
+            <td><input type="number" value="1" /></td>
+            <td>$120.12</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-add">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter Your coupon" />
+          <button>Apply</button>
+        </div>
+      </div>
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>cart subtotlal</td>
+            <td>$ 330</td>
+          </tr>
+          <tr>
+            <td>shopping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Totals</strong></td>
+            <td><strong>$ 330</strong></td>
+          </tr>
+        </table>
+        <button>proceed to checkout</button>
+      </div>
+    </section>
+
+    <!-- footer section is started here -->
+    <footer id="footer-section">
+      <div id="footer-section-warrper">
+        <div id="col">
+          <div class="logo-class">
+            <a><h1>S.K.S</h1></a>
+            <h4>
+              <i class="fa-solid fa-cart-shopping log" id="cart"></i>Online
+            </h4>
+            <h6>Store</h6>
+          </div>
+          <h4>contact</h4>
+          <p><strong> address</strong>:34-Street 4th dse ghazni afg.</p>
+          <p>
+            <strong> phone <br /></strong>:0798425895/ 0789666895.
+          </p>
+          <p><strong> Hours</strong>:10:00 -18:00 .Mon-sat</p>
+
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div id="col">
+          <h4>About Us</h4>
+          <a href="">about us</a>
+          <a href="">Delivery Information</a>
+          <a href="">privacy & policy</a>
+          <a href="">Terms & conditions</a>
+          <a href="">Contact Us</a>
+        </div>
+
+        <div id="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In </a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My order</a>
+          <a href="#">Help</a>
+        </div>
+
+        <div id="col">
+          <h4>Install App</h4>
+          <p>Form App Store or GooGle Play</p>
+          <div class="row">
+            <img src="../assete/images/google.png" alt="" />
+            <img src="../assete/images/store.png" alt="" />
+            <p>Secured Payment Gateways</p>
+            <img src="../assete/images/B.png" id="track-img" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>This website &copy;copyright is with Smiullah Shaheen 2023-10-3</p>
+      </div>
+    </footer>
+
+    <script src="../assete/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="assete/css/all.css" />
+
+    <link rel="stylesheet" href="assete/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header-section">
+      <div>
+        <button class="btn"><a href="loginPage.html">login</a></button>
+        <button class="btn"><a href="#">log out</a></button>
+      </div>
+      <div>
+        <button class="btn"><a href="#">Pshto</a></button>
+        <button class="btn"><a href="#">English</a></button>
+      </div>
+    </header>
+
+    <!-- navbar section is started here -->
+
+    <section id="header">
+      <div class="logo-class">
+        <a><h1>S.K.S</h1></a>
+        <h4><i class="fa-solid fa-cart-shopping log" id="cart"></i>Online</h4>
+        <h6>Store</h6>
+      </div>
+      <div>
+        <ul id="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a onclick="contactfunc()">contact</a></li> -->
+          <li><a href="contact.html">contact</a></li>
+
+          <li id="lg-bag">
+            <a onclick="cartfunc()"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <a href="#"><i id="close" class="fa-solid fa-square-xmark"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-list"></i>
+      </div>
+    </section>
+
+    <section class="headin-hero-background">
+      <!-- heading section started here -->
+      <section id="heading-section">
+        <h1>Sk Online Store</h1>
+        <div>
+          <input type="search" placeholder="search......." />
+          <a href="#">search</a>
+        </div>
+      </section>
+      <!-- heri section is started here -->
+      <section id="hero-section">
+        <div>
+          <span>Trade-in-all-offer</span>
+          <h1>super value deals</h1>
+          <h2>On all Products</h2>
+          <p>Save more with coupons & Up to70% off!</p>
+          <button class="btn link-button"><a href="#"> content</a></button>
+          <button class="btn link-button" id="vedio-btn">
+            <a href="products.html" id="vedio-link">Products</a>
+          </button>
+        </div>
+      </section>
+    </section>
+    <!-- feature section is started here -->
+    <section id="feature">
+      <div class="fe-box">
+        <img src="assete/images/f1.webp" alt="" />
+        <h6>Free shopping</h6>
+      </div>
+      <div class="fe-box">
+        <img src="assete/images/f2.jpg" alt="" />
+        <h6>Online order</h6>
+      </div>
+      <div class="fe-box">
+        <img src="assete/images/f3.jpg" alt="" />
+        <h6>save money</h6>
+      </div>
+      <div class="fe-box">
+        <img src="assete/images/f1.webp" alt="" />
+        <h6>Promotions</h6>
+      </div>
+      <div class="fe-box">
+        <img src="assete/images/f5.jpg" alt="" />
+        <h6>happy sells</h6>
+      </div>
+      <div class="fe-box">
+        <img src="assete/images/f6.webp" alt="" />
+        <h6>F24/7 Support</h6>
+      </div>
+    </section>
+
+    <!-- product section is started here -->
+    <section id="product1">
+      <h1>Featured products</h1>
+      <p>Summer Collection New Modern Design</p>
+      <div class="products-contianer">
+        <div class="pro">
+          <img src="assete/images/shirts/sh1.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>25$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shirts/sh4.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>50$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="assete/images/shirts/sh6.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>50$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="assete/images/shirts/sh5.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>50$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="assete/images/shoes/s1.jpg" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>22$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shoes/s2.webp" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>28$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shoes/s3.jpeg" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>25$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shoes/s4.jpg" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>30$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="addmision-section">
+      <section id="addmision-content">
+        <h4>Repair services</h4>
+        <h1>Up to <span>70% off</span> - All T-shirt & Shoes</h1>
+        <a href="#">explore more</a>
+      </section>
+    </section>
+
+    <!-- new arrivals section is started here -->
+    <section id="product1">
+      <h1>New Arrivals</h1>
+      <p>Summer Collection New Modern Design</p>
+      <div class="products-contianer">
+        <div class="pro">
+          <img src="assete/images/shirts/sh9.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>25$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shirts/h1.jpeg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>50$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="assete/images/shirts/sh7.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>50$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="assete/images/shirts/h2.jpg" alt="" />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>50$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="assete/images/shoes/s5.jpeg" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>22$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shoes/t1 (1).jpg" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>28$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shoes/w1.jpg" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>25$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="assete/images/shoes/w2.webp" alt="" />
+          <div class="description">
+            <span>NIKE</span>
+            <h5>Cartoon Astronaut Shoes</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>30$</h4>
+            <a href="single-pro.html">
+              <i class="fa-solid fa-cart-shopping" id="cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="more-products">
+      <h1>more products</h1>
+      <div id="wrapper">
+        <div class="new-products-parts">
+          <img src="assete/images/watches/w3.jpg" alt="watch" />
+          <h3>new stylish watch</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            modi natus similique error, rem qui at voluptate ipsum reiciendis
+            exercitationem vitae facilis quisquam tenetur nihil quas, officia
+            repudiandae eos recusandae!
+          </p>
+          <a href="#" class="my-btn">Read More</a>
+        </div>
+
+        <div class="new-products-parts">
+          <img src="assete/images/shoes/s4.jpg" alt="" />
+          <h3>new Natural Shoes</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            modi natus similique error, rem qui at voluptate ipsum reiciendis
+            exercitationem vitae facilis quisquam tenetur nihil quas, officia
+            repudiandae eos recusandae!
+          </p>
+          <a href="#" class="my-btn">Read More</a>
+        </div>
+
+        <div class="new-products-parts">
+          <img src="assete/images/bags/b1.jpg" alt="" />
+          <h3>new modern bags</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            modi natus similique error, rem qui at voluptate ipsum reiciendis
+            exercitationem vitae facilis quisquam tenetur nihil quas, officia
+            repudiandae eos recusandae!
+          </p>
+          <a href="#" class="my-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner section is started here -->
+    <section id="banner">
+      <div class="banner-box">
+        <h4>Crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>The best classic dress is on sale at cara</span>
+        <button class="banner-btn">learn more</button>
+      </div>
+      <div class="banner-box banner-box2">
+        <h4>Spring/Summer</h4>
+        <h2>Upcomming season</h2>
+        <span>The best classic dress is on sale at cara</span>
+        <button class="banner-btn">Collection</button>
+      </div>
+    </section>
+    <!-- second-banner section is started here -->
+    <section id="second-banner">
+      <div class="second-banner-box">
+        <h1>SEASONAL SALE</h1>
+        <h3>winter Collection -50% off</h3>
+      </div>
+      <div class="second-banner-box" id="box2">
+        <h1>NEW FOOTWEAR COLLECTION</h1>
+        <h3>spring / summer 2022</h3>
+      </div>
+      <div class="second-banner-box" id="box3">
+        <h1>T-SHIRTS</h1>
+        <h3>New trendy prints</h3>
+      </div>
+    </section>
+    <!-- testimonial section is started here -->
+    <section id="testimonial-section">
+      <h1>What our customers say</h1>
+
+      <div id="testimonial-section-wrapper">
+        <div class="testimonial-card">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam,
+            vitae excepturi pariatur sapiente dolorem omnis minus blanditiis
+            incidunt quam.
+          </p>
+          <div class="user-info">
+            <img src="assete/images/my.jpg" alt="user-pic" />
+            <h3>Hasibullah</h3>
+          </div>
+          <a href="#">User Profile</a>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam,
+            vitae excepturi pariatur sapiente dolorem omnis minus blanditiis
+            incidunt quam.
+          </p>
+          <div class="user-info">
+            <img src="assete/images/my1.JPG" alt="user-pic" />
+            <h3>Abdulghani</h3>
+          </div>
+          <a href="#">User Profile</a>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam,
+            vitae excepturi pariatur sapiente dolorem omnis minus blanditiis
+            incidunt quam.
+          </p>
+          <div class="user-info">
+            <img src="assete/images/my.jpg" alt="user-pic" />
+            <h3>hakimullah</h3>
+          </div>
+          <a href="#">User Profile</a>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam,
+            vitae excepturi pariatur sapiente dolorem omnis minus blanditiis
+            incidunt quam.
+          </p>
+          <div class="user-info">
+            <img src="assete/images/my1.JPG" alt="user-pic" />
+            <h3>Samiullah</h3>
+          </div>
+          <a href="#">User Profile</a>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletters section is started here -->
+    <section id="Newsletters">
+      <div class="Newstext">
+        <h4>sign up for Newsletters</h4>
+        <p>
+          get E-mail update about latest shop and <span>special offers.</span>
+        </p>
+      </div>
+      <form action="">
+        <input type="email" placeholder="your Email address" />
+        <button>Sign Up</button>
+      </form>
+    </section>
+    <!-- footer section is started here -->
+    <footer id="footer-section">
+      <div id="footer-section-warrper">
+        <div id="col">
+          <div class="logo-class">
+            <a><h1>S.K.S</h1></a>
+            <h4>
+              <i class="fa-solid fa-cart-shopping log" id="cart"></i>Online
+            </h4>
+            <h6>Store</h6>
+          </div>
+          <h4>contact</h4>
+          <p><strong> address</strong>:34-Street 4th dse ghazni afg.</p>
+          <p>
+            <strong> phone <br /></strong>:0798425895/ 0789666895.
+          </p>
+          <p><strong> Hours</strong>:10:00 -18:00 .Mon-sat</p>
+
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="scial-links"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div id="col">
+          <h4>About Us</h4>
+          <a href="">about us</a>
+          <a href="">Delivery Information</a>
+          <a href="">privacy & policy</a>
+          <a href="">Terms & conditions</a>
+          <a href="">Contact Us</a>
+        </div>
+
+        <div id="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In </a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My order</a>
+          <a href="#">Help</a>
+        </div>
+
+        <div id="col">
+          <h4>Install App</h4>
+          <p>Form App Store or GooGle Play</p>
+          <div class="row">
+            <img src="assete/images/google.png" alt="" />
+            <img src="assete/images/store.png" alt="" />
+            <p>Secured Payment Gateways</p>
+            <img src="assete/images/B.png" id="track-img" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>This website &copy;copyright is with Smiullah Shaheen 2023-10-3</p>
+      </div>
+    </footer>
+
+    <script src="assete/js/index.js">
+      // function goShop(){
+      //     if(document.cookie.length!=0){
+      //         window.location.href="shop.html";
+
+      //     }
+      //     else{
+      //         if(confirm("do you want save cookei")){
+      //             window.location.href="loginPage.html";
+      //         }
+      //         else{
+      //             window.location.href="#";
+      //         }
+      //     }
+      // }
+    </script>
+
+    <!-- src="assete/js/index.js" -->
+  </body>
+</html>
